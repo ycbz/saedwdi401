@@ -1,6 +1,6 @@
 <?php
 
-namespace App/Entity;
+namespace App\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
@@ -26,21 +26,21 @@ class ListeEtLocalisationDesMuseesDeFrance
      *
      * @ORM\Column(name="RÃ©gion administrative", type="string", length=39, nullable=true)
      */
-    private $rã©gionAdministrative;
+    private $rï¿½gionAdministrative;
 
     /**
      * @var string|null
      *
      * @ORM\Column(name="DÃ©partement", type="string", length=24, nullable=true)
      */
-    private $dã©partement;
+    private $dï¿½partement;
 
     /**
      * @var string|null
      *
      * @ORM\Column(name="Identifiant MusÃ©ofile", type="string", length=5, nullable=true)
      */
-    private $identifiantMusã©ofile;
+    private $identifiantMusï¿½ofile;
 
     /**
      * @var string|null
@@ -54,7 +54,7 @@ class ListeEtLocalisationDesMuseesDeFrance
      *
      * @ORM\Column(name="Nom officiel du musÃ©e", type="string", length=106, nullable=true)
      */
-    private $nomOfficielDuMusã©e;
+    private $nomOfficielDuMusï¿½e;
 
     /**
      * @var string|null
@@ -82,7 +82,7 @@ class ListeEtLocalisationDesMuseesDeFrance
      *
      * @ORM\Column(name="TÃ©lÃ©phone", type="string", length=84, nullable=true)
      */
-    private $tã©lã©phone;
+    private $tï¿½lï¿½phone;
 
     /**
      * @var string|null
@@ -124,7 +124,192 @@ class ListeEtLocalisationDesMuseesDeFrance
      *
      * @ORM\Column(name="Date arrÃªtÃ© attribution appellation", type="string", length=10, nullable=true)
      */
-    private $dateArrãªtã©AttributionAppellation;
+    private $dateArrï¿½tï¿½AttributionAppellation;
+
+    public function getId(): ?int
+    {
+        return $this->id;
+    }
+
+    public function getRï¿½gionAdministrative(): ?string
+    {
+        return $this->rï¿½gionAdministrative;
+    }
+
+    public function setRï¿½gionAdministrative(?string $rï¿½gionAdministrative): self
+    {
+        $this->rï¿½gionAdministrative = $rï¿½gionAdministrative;
+
+        return $this;
+    }
+
+    public function getDï¿½partement(): ?string
+    {
+        return $this->dï¿½partement;
+    }
+
+    public function setDï¿½partement(?string $dï¿½partement): self
+    {
+        $this->dï¿½partement = $dï¿½partement;
+
+        return $this;
+    }
+
+    public function getIdentifiantMusï¿½ofile(): ?string
+    {
+        return $this->identifiantMusï¿½ofile;
+    }
+
+    public function setIdentifiantMusï¿½ofile(?string $identifiantMusï¿½ofile): self
+    {
+        $this->identifiantMusï¿½ofile = $identifiantMusï¿½ofile;
+
+        return $this;
+    }
+
+    public function getCommune(): ?string
+    {
+        return $this->commune;
+    }
+
+    public function setCommune(?string $commune): self
+    {
+        $this->commune = $commune;
+
+        return $this;
+    }
+
+    public function getNomOfficielDuMusï¿½e(): ?string
+    {
+        return $this->nomOfficielDuMusï¿½e;
+    }
+
+    public function setNomOfficielDuMusï¿½e(?string $nomOfficielDuMusï¿½e): self
+    {
+        $this->nomOfficielDuMusï¿½e = $nomOfficielDuMusï¿½e;
+
+        return $this;
+    }
+
+    public function getAdresse(): ?string
+    {
+        return $this->adresse;
+    }
+
+    public function setAdresse(?string $adresse): self
+    {
+        $this->adresse = $adresse;
+
+        return $this;
+    }
+
+    public function getLieu(): ?string
+    {
+        return $this->lieu;
+    }
+
+    public function setLieu(?string $lieu): self
+    {
+        $this->lieu = $lieu;
+
+        return $this;
+    }
+
+    public function getCodePostal(): ?string
+    {
+        return $this->codePostal;
+    }
+
+    public function setCodePostal(?string $codePostal): self
+    {
+        $this->codePostal = $codePostal;
+
+        return $this;
+    }
+
+    public function getTï¿½lï¿½phone(): ?string
+    {
+        return $this->tï¿½lï¿½phone;
+    }
+
+    public function setTï¿½lï¿½phone(?string $tï¿½lï¿½phone): self
+    {
+        $this->tï¿½lï¿½phone = $tï¿½lï¿½phone;
+
+        return $this;
+    }
+
+    public function getUrl(): ?string
+    {
+        return $this->url;
+    }
+
+    public function setUrl(?string $url): self
+    {
+        $this->url = $url;
+
+        return $this;
+    }
+
+    public function getLatitude(): ?string
+    {
+        return $this->latitude;
+    }
+
+    public function setLatitude(?string $latitude): self
+    {
+        $this->latitude = $latitude;
+
+        return $this;
+    }
+
+    public function getLongitude(): ?string
+    {
+        return $this->longitude;
+    }
+
+    public function setLongitude(?string $longitude): self
+    {
+        $this->longitude = $longitude;
+
+        return $this;
+    }
+
+    public function getRefDeps(): ?string
+    {
+        return $this->refDeps;
+    }
+
+    public function setRefDeps(?string $refDeps): self
+    {
+        $this->refDeps = $refDeps;
+
+        return $this;
+    }
+
+    public function getGeolocalisation(): ?string
+    {
+        return $this->geolocalisation;
+    }
+
+    public function setGeolocalisation(?string $geolocalisation): self
+    {
+        $this->geolocalisation = $geolocalisation;
+
+        return $this;
+    }
+
+    public function getDateArrï¿½tï¿½AttributionAppellation(): ?string
+    {
+        return $this->dateArrï¿½tï¿½AttributionAppellation;
+    }
+
+    public function setDateArrï¿½tï¿½AttributionAppellation(?string $dateArrï¿½tï¿½AttributionAppellation): self
+    {
+        $this->dateArrï¿½tï¿½AttributionAppellation = $dateArrï¿½tï¿½AttributionAppellation;
+
+        return $this;
+    }
 
 
 }
