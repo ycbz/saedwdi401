@@ -1,0 +1,1 @@
+Observons le taux de fréquentation des musées de France en fonction de leur localisation.
