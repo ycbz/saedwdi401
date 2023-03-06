@@ -6,15 +6,13 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-class ConferenceController extends AbstractController
+class ApiController extends AbstractController
 {
-    /**
-     * @Route("/conference", name="app_conference")
-     */
+    #[Route('/api', name: 'app_api')]
     public function index(): Response
     {
-        return $this->render('conference/index.html.twig', [
-            'controller_name' => 'ConferenceController',
+        return $this->render('api/index.html.twig', [
+            'controller_name' => 'ApiController',
         ]);
     }
 }
