@@ -19,133 +19,133 @@ class FrequentationMuseesDeFrance2018
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="IDENTITY")
      */
-    private $id;
+    public $id;
 
     /**
      * @var string|null
      *
      * @ORM\Column(name="osm_id", type="string", length=10, nullable=true)
      */
-    private $osmId;
+    public $osmId;
 
     /**
      * @var string|null
      *
      * @ORM\Column(name="name", type="string", length=117, nullable=true)
      */
-    private $name;
+    public $name;
 
     /**
      * @var string|null
      *
      * @ORM\Column(name="number", type="string", length=7, nullable=true)
      */
-    private $number;
+    public $number;
 
     /**
      * @var string|null
      *
      * @ORM\Column(name="street", type="string", length=56, nullable=true)
      */
-    private $street;
+    public $street;
 
     /**
      * @var string|null
      *
      * @ORM\Column(name="postal_code", type="string", length=17, nullable=true)
      */
-    private $postalCode;
+    public $postalCode;
 
     /**
      * @var string|null
      *
      * @ORM\Column(name="city", type="string", length=30, nullable=true)
      */
-    private $city;
+    public $city;
 
     /**
      * @var string|null
      *
      * @ORM\Column(name="country", type="string", length=27, nullable=true)
      */
-    private $country;
+    public $country;
 
     /**
      * @var string|null
      *
      * @ORM\Column(name="country_code", type="string", length=2, nullable=true)
      */
-    private $countryCode;
+    public $countryCode;
 
     /**
      * @var string|null
      *
      * @ORM\Column(name="status", type="string", length=6, nullable=true)
      */
-    private $status;
+    public $status;
 
     /**
      * @var string|null
      *
      * @ORM\Column(name="lat", type="string", length=19, nullable=true)
      */
-    private $lat;
+    public $lat;
 
     /**
      * @var string|null
      *
      * @ORM\Column(name="lon", type="string", length=20, nullable=true)
      */
-    private $lon;
+    public $lon;
 
     /**
      * @var string|null
      *
      * @ORM\Column(name="website", type="string", length=10, nullable=true)
      */
-    private $website;
+    public $website;
 
     /**
      * @var string|null
      *
      * @ORM\Column(name="phone", type="string", length=10, nullable=true)
      */
-    private $phone;
+    public $phone;
 
     /**
      * @var string|null
      *
      * @ORM\Column(name="fax", type="string", length=10, nullable=true)
      */
-    private $fax;
+    public $fax;
 
     /**
      * @var int|null
      *
      * @ORM\Column(name="year", type="integer", nullable=true)
      */
-    private $year;
+    public $year;
 
     /**
      * @var string|null
      *
      * @ORM\Column(name="stats", type="string", length=54, nullable=true)
      */
-    private $stats;
+    public $stats;
 
     /**
      * @var string|null
      *
      * @ORM\Column(name="tags", type="string", length=23, nullable=true)
      */
-    private $tags;
+    public $tags;
 
     /**
      * @var string|null
      *
      * @ORM\Column(name="description", type="string", length=10, nullable=true)
      */
-    private $description;
+    public $description;
 
     public function getId(): ?string
     {

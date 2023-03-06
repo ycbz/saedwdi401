@@ -19,150 +19,150 @@ class ListeEtLocalisationDesMuseesDeFrance
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="IDENTITY")
      */
-    private $id;
+    public $id;
 
     /**
      * @var string|null
      *
-     * @ORM\Column(name="Région administrative", type="string", length=39, nullable=true)
+     * @ORM\Column(name="Region_administrative", type="string", length=39, nullable=true)
      */
-    private $r�gionAdministrative;
+    public $regionAdministrative;
 
     /**
      * @var string|null
      *
-     * @ORM\Column(name="Département", type="string", length=24, nullable=true)
+     * @ORM\Column(name="Departement", type="string", length=24, nullable=true)
      */
-    private $d�partement;
+    public $departement;
 
     /**
      * @var string|null
      *
-     * @ORM\Column(name="Identifiant Muséofile", type="string", length=5, nullable=true)
+     * @ORM\Column(name="Identifiant_Museofile", type="string", length=5, nullable=true)
      */
-    private $identifiantMus�ofile;
+    public $identifiantMuseofile;
 
     /**
      * @var string|null
      *
      * @ORM\Column(name="Commune", type="string", length=31, nullable=true)
      */
-    private $commune;
+    public $commune;
 
     /**
      * @var string|null
      *
-     * @ORM\Column(name="Nom officiel du musée", type="string", length=106, nullable=true)
+     * @ORM\Column(name="Nom_officiel_du_musee", type="string", length=106, nullable=true)
      */
-    private $nomOfficielDuMus�e;
+    public $nomOfficielDuMusee;
 
     /**
      * @var string|null
      *
      * @ORM\Column(name="Adresse", type="string", length=118, nullable=true)
      */
-    private $adresse;
+    public $adresse;
 
     /**
      * @var string|null
      *
      * @ORM\Column(name="Lieu", type="string", length=72, nullable=true)
      */
-    private $lieu;
+    public $lieu;
 
     /**
      * @var string|null
      *
-     * @ORM\Column(name="Code Postal", type="string", length=5, nullable=true)
+     * @ORM\Column(name="Code_Postal", type="string", length=5, nullable=true)
      */
-    private $codePostal;
+    public $codePostal;
 
     /**
      * @var string|null
      *
-     * @ORM\Column(name="Téléphone", type="string", length=84, nullable=true)
+     * @ORM\Column(name="Telephone", type="string", length=84, nullable=true)
      */
-    private $t�l�phone;
+    public $telephone;
 
     /**
      * @var string|null
      *
      * @ORM\Column(name="URL", type="string", length=170, nullable=true)
      */
-    private $url;
+    public $url;
 
     /**
      * @var string|null
      *
      * @ORM\Column(name="Latitude", type="string", length=19, nullable=true)
      */
-    private $latitude;
+    public $latitude;
 
     /**
      * @var string|null
      *
      * @ORM\Column(name="Longitude", type="string", length=20, nullable=true)
      */
-    private $longitude;
+    public $longitude;
 
     /**
      * @var string|null
      *
      * @ORM\Column(name="REF_Deps", type="string", length=7, nullable=true)
      */
-    private $refDeps;
+    public $refDeps;
 
     /**
      * @var string|null
      *
      * @ORM\Column(name="geolocalisation", type="string", length=40, nullable=true)
      */
-    private $geolocalisation;
+    public $geolocalisation;
 
     /**
      * @var string|null
      *
-     * @ORM\Column(name="Date arrêté attribution appellation", type="string", length=10, nullable=true)
+     * @ORM\Column(name="Date_arrete_attribution_appellation", type="string", length=10, nullable=true)
      */
-    private $dateArr�t�AttributionAppellation;
+    public $dateArreteAttributionAppellation;
 
     public function getId(): ?int
     {
         return $this->id;
     }
 
-    public function getR�gionAdministrative(): ?string
+    public function getRegionAdministrative(): ?string
     {
-        return $this->r�gionAdministrative;
+        return $this->regionAdministrative;
     }
 
-    public function setR�gionAdministrative(?string $r�gionAdministrative): self
+    public function setRegionAdministrative(?string $regionAdministrative): self
     {
-        $this->r�gionAdministrative = $r�gionAdministrative;
+        $this->regionAdministrative = $regionAdministrative;
 
         return $this;
     }
 
-    public function getD�partement(): ?string
+    public function getDepartement(): ?string
     {
-        return $this->d�partement;
+        return $this->departement;
     }
 
-    public function setD�partement(?string $d�partement): self
+    public function setDepartement(?string $departement): self
     {
-        $this->d�partement = $d�partement;
+        $this->departement = $departement;
 
         return $this;
     }
 
-    public function getIdentifiantMus�ofile(): ?string
+    public function getIdentifiantMuseofile(): ?string
     {
-        return $this->identifiantMus�ofile;
+        return $this->identifiantMuseofile;
     }
 
-    public function setIdentifiantMus�ofile(?string $identifiantMus�ofile): self
+    public function setIdentifiantMuseofile(?string $identifiantMuseofile): self
     {
-        $this->identifiantMus�ofile = $identifiantMus�ofile;
+        $this->identifiantMuseofile = $identifiantMuseofile;
 
         return $this;
     }
@@ -179,14 +179,14 @@ class ListeEtLocalisationDesMuseesDeFrance
         return $this;
     }
 
-    public function getNomOfficielDuMus�e(): ?string
+    public function getNomOfficielDuMusee(): ?string
     {
-        return $this->nomOfficielDuMus�e;
+        return $this->nomOfficielDuMusee;
     }
 
-    public function setNomOfficielDuMus�e(?string $nomOfficielDuMus�e): self
+    public function setNomOfficielDuMusee(?string $nomOfficielDuMusee): self
     {
-        $this->nomOfficielDuMus�e = $nomOfficielDuMus�e;
+        $this->nomOfficielDuMusee = $nomOfficielDuMusee;
 
         return $this;
     }
@@ -227,14 +227,14 @@ class ListeEtLocalisationDesMuseesDeFrance
         return $this;
     }
 
-    public function getT�l�phone(): ?string
+    public function getTelephone(): ?string
     {
-        return $this->t�l�phone;
+        return $this->telephone;
     }
 
-    public function setT�l�phone(?string $t�l�phone): self
+    public function setTelephone(?string $telephone): self
     {
-        $this->t�l�phone = $t�l�phone;
+        $this->telephone = $telephone;
 
         return $this;
     }
@@ -299,14 +299,14 @@ class ListeEtLocalisationDesMuseesDeFrance
         return $this;
     }
 
-    public function getDateArr�t�AttributionAppellation(): ?string
+    public function getDateArreteAttributionAppellation(): ?string
     {
-        return $this->dateArr�t�AttributionAppellation;
+        return $this->dateArreteAttributionAppellation;
     }
 
-    public function setDateArr�t�AttributionAppellation(?string $dateArr�t�AttributionAppellation): self
+    public function setDateArreteAttributionAppellation(?string $dateArreteAttributionAppellation): self
     {
-        $this->dateArr�t�AttributionAppellation = $dateArr�t�AttributionAppellation;
+        $this->dateArreteAttributionAppellation = $dateArreteAttributionAppellation;
 
         return $this;
     }
